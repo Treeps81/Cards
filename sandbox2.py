@@ -127,7 +127,7 @@ while running:
 
     # Draw the entire state of the world.
     screen.fill((20, 20, 100)) # cover the screen in purple
-    if model.centerDeck.deck:k
+    if model.centerDeck.deck:
         topcard = model.centerDeck.deck[-1]
         screen.blit(topcard.image, centerDeck_pos)
     if model.player1Deck.deck:
