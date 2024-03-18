@@ -152,7 +152,7 @@ while running:
                 
                 
                 print(type(model.centerDeck.deck[-1]))
-                if rect.collidepoint(mouse_pos) and topcard.value==model.centerDeck.deck[-2].value and len(model.centerDeck.deck)>1:
+                if rect.collidepoint(mouse_pos) and len(model.centerDeck.deck)>1 and topcard.value==model.centerDeck.deck[-2].value:
                         #print(type(model.centerDeck.deck[-2]))
                         # move the entire center pile back to player deck
                         for i in range(len(model.centerDeck.deck)):
